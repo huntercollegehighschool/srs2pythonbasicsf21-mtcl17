@@ -31,4 +31,17 @@ diamond(5) -->
 """
 
 def diamond(size):
-  pass  # delete this when you start writing your code
+  row=1
+  while row<=size:
+    if row == 1:
+      print(" "*(size-row)+"*")
+    else:
+      print(" "*(size-row)+"*"+" "*(2*(row-2)+1)+"*")
+    row+=1
+  row=size-1
+  while row>=1:
+    if row == 1:
+      print(" "*(size-row)+"*")
+    else:
+      print(" "*(size-row)+"*"+" "*(2*(row-2)+1)+"*")
+    row-=1
